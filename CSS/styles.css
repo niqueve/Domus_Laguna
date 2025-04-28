@@ -1,0 +1,518 @@
+/* CSS/styles.css */
+
+/* Reset Básico e Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Define box-sizing para facilitar o layout */
+}
+
+html {
+    scroll-behavior: smooth;
+    /* Rolagem suave para links internos */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    /* Melhora a legibilidade */
+}
+
+a {
+    color: #2E8B57;
+    /* Cor padrão para links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    /* Sublinhado no hover para clareza */
+}
+
+img {
+    max-width: 100%;
+    /* Garante que imagens não ultrapassem seus containers */
+    height: auto;
+    display: block;
+    /* Remove espaço extra abaixo das imagens */
+}
+
+ul {
+    list-style: none;
+    /* Remove marcadores de lista padrão */
+}
+
+button {
+    cursor: pointer;
+    /* Cursor de ponteiro para botões */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2E8B57;
+    color: white;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #256d46;
+    /* Escurece no hover */
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    /* Faz inputs ocuparem a largura disponível */
+    margin-bottom: 10px;
+    /* Espaçamento inferior */
+}
+
+/* Cabeçalho (Header) */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    /* Padding responsivo com porcentagem */
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    /* Mantém o header fixo no topo */
+    top: 0;
+    z-index: 1000;
+    /* Garante que fique sobre outros elementos */
+    flex-wrap: wrap;
+    /* Permite quebra de linha em telas pequenas */
+}
+
+#titulo h1 {
+    font-size: 1.8em;
+    /* Tamanho de fonte responsivo */
+    color: #2E8B57;
+    line-height: 1;
+    /* Ajusta altura da linha */
+    margin: 0;
+}
+
+/* Navegação (Nav) */
+nav {
+    position: relative;
+}
+
+#menu {
+    display: flex;
+    gap: 25px;
+}
+
+#menu li a {
+    color: #555;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#menu li a:hover,
+#menu li a.active {
+    /* Estilo para link ativo (se implementado via JS) */
+    color: #2E8B57;
+}
+
+/* Botão Hamburguer (Mobile) */
+#menu-hamburguer {
+    display: none;
+    /* Oculto em telas maiores */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+    /* Garante que fique sobre o menu */
+}
+
+#menu-hamburguer span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #333;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Animação do Hamburguer para 'X' quando ativo */
+#menu-hamburguer.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+#menu-hamburguer.active span:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-hamburguer.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+/* Conteúdo Principal (Main) */
+main {
+    padding: 40px 5%;
+    /* Padding responsivo */
+}
+
+/* Seção Principal (Home) */
+#home {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite quebra em telas menores */
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 40px;
+    /* Espaçamento inferior */
+}
+
+#home aside,
+#home article {
+    flex: 1;
+    /* Faz com que ocupem espaço igualmente */
+    min-width: 300px;
+    /* Largura mínima antes de quebrar */
+}
+
+#home aside h2 {
+    font-size: 2.5em;
+    /* Tamanho de fonte responsivo */
+    margin-bottom: 15px;
+}
+
+#home aside h2 span {
+    color: #2E8B57;
+}
+
+#home aside p {
+    margin: 20px 0;
+    font-size: 1.1em;
+    /* Tamanho de fonte responsivo */
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    /* Limita a largura do formulário */
+}
+
+#submit {
+    padding: 12px;
+    /* Mais padding para o botão */
+    align-self: flex-start;
+    /* Alinha o botão à esquerda */
+}
+
+/* Carrossel */
+#carousel-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    /* Limita a largura máxima */
+    margin: 0 auto;
+    /* Centraliza se for menor que o espaço */
+}
+
+#carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    /* Transição suave para JS */
+}
+
+#carousel img {
+    width: 100%;
+    flex-shrink: 0;
+    /* Impede que as imagens encolham */
+    border-radius: 10px;
+}
+
+/* Mapa (quando visível) */
+#map {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    /* Adiciona uma borda sutil */
+}
+
+/* Seção de Favoritos */
+#nome-favorito {
+    margin-top: 20px;
+    max-width: calc(100% - 22px); /* Ajusta largura do input */
+}
+
+#adicionar-favorito,
+#mostrar-mapa-favoritos,
+#mostrar-favoritos-lista {
+    margin-top: 10px;
+    margin-right: 10px; /* Espaçamento entre botões */
+}
+
+#favoritos-lista-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+#lista-favoritos li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#lista-favoritos li:last-child {
+    border-bottom: none;
+}
+
+.remover-favorito {
+    background-color: #f44336;
+    /* Vermelho para remoção */
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+
+.remover-favorito:hover {
+    background-color: #d32f2f;
+}
+
+/* Seção Sobre */
+#sobre {
+    padding: 40px 0;
+    background-color: #fff;
+    /* Fundo branco para destaque */
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#sobre h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Rodapé (Footer) */
+footer {
+    background-color: #2E8B57;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 5%;
+    gap: 30px;
+    /* Espaçamento entre colunas */
+    justify-content: space-between;
+}
+
+footer div {
+    flex: 1;
+    min-width: 200px;
+    /* Largura mínima para colunas */
+}
+
+footer h3 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+footer a {
+    color: #f0f0f0;
+    /* Cor ligeiramente mais clara para links no footer */
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer address {
+    font-style: normal;
+    line-height: 1.8;
+}
+
+/* Direitos Autorais */
+#copyright {
+    background-color: #1e5c3c;
+    /* Tom mais escuro do verde */
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+
+/* --- Media Queries para Responsividade --- */
+
+/* Tablets e Desktops Pequenos (ex: <= 1024px) */
+@media (max-width: 1024px) {
+    #titulo h1 {
+        font-size: 1.6em;
+    }
+
+    #home aside h2 {
+        font-size: 2.2em;
+    }
+
+    footer {
+        gap: 20px;
+    }
+}
+
+/* Tablets (ex: <= 768px) */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 3%;
+        justify-content: space-between;
+    }
+
+     /* Ajusta o layout do header para garantir espaço para o logo e botão */
+    #titulo {
+       flex-grow: 1; /* Permite que o título cresça */
+    }
+    nav{
+       flex-shrink: 0; /* Impede que a navegação encolha demais */
+    }
+
+
+    #menu-hamburguer {
+        display: flex;
+        /* Mostra o botão hamburguer */
+    }
+
+    #menu {
+        display: none;
+        /* Esconde o menu normal */
+        position: absolute;
+        top: 100%;
+        /* Posiciona abaixo do header */
+        right: 0;
+        background-color: white;
+        width: 250px;
+        /* Largura do menu */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        flex-direction: column;
+        gap: 0;
+        /* Remove o gap entre itens */
+        padding: 10px 0;
+        border-radius: 0 0 5px 5px;
+    }
+
+    #menu.active {
+        display: flex;
+        /* Mostra o menu quando ativo */
+    }
+
+    #menu li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+    }
+     #menu li:last-child {
+        border-bottom: none;
+    }
+
+    #menu li a {
+        display: block;
+        /* Faz o link ocupar toda a largura do li */
+        padding: 15px;
+        color: #333;
+    }
+     #menu li a:hover {
+        background-color: #f9f9f9;
+        color: #2E8B57;
+        text-decoration: none;
+    }
+
+
+    main {
+        padding: 30px 3%;
+    }
+
+    #home {
+        flex-direction: column;
+        /* Empilha aside e article */
+        text-align: center;
+        /* Centraliza texto */
+    }
+
+    #home aside {
+        margin-bottom: 30px;
+        /* Espaço entre aside e article */
+    }
+
+    form {
+        max-width: none;
+        /* Permite que o formulário ocupe a largura */
+        align-items: center;
+    }
+
+     #submit {
+        align-self: center; /* Centraliza botão submit */
+     }
+
+    footer {
+        flex-direction: column;
+        /* Empilha colunas do footer */
+        text-align: center;
+    }
+
+    footer div {
+        min-width: auto;
+        /* Remove largura mínima */
+        margin-bottom: 20px;
+    }
+     footer div:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Celulares (ex: <= 480px) */
+@media (max-width: 480px) {
+    #titulo h1 {
+        font-size: 1.4em;
+    }
+
+    #home aside h2 {
+        font-size: 1.8em;
+    }
+
+    #home aside p {
+        font-size: 1em;
+    }
+
+    button,
+    input[type="text"],
+    input[type="email"] {
+        font-size: 0.95em; /* Ajusta tamanho da fonte em inputs/botões */
+    }
+
+    #adicionar-favorito,
+    #mostrar-mapa-favoritos,
+    #mostrar-favoritos-lista {
+        width: 100%; /* Botões ocupam largura total */
+        margin-right: 0;
+        margin-bottom: 10px; /* Espaço entre botões empilhados */
+    }
+    #adicionar-favorito:last-of-type{
+         margin-bottom: 0;
+    }
+
+}

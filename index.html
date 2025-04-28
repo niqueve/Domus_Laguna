@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domus Laguna</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script defer src="js/main.js"></script> 
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlUeJOvuMtpbQBN6nZFhTd0q2G3hUWbD4&callback=initMap&loading=async"></script>
+    <script defer src="js/mapa.js"></script>
+</head>
+<body>
+    <header>
+        <div id="titulo">
+            <h1>Domus</h1>
+            <h1>Laguna</h1>
+        </div>
+
+        <nav>
+            <button id="menu-hamburguer" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#servicos">Serviços</a></li> <li><a href="#contato">Contato</a></li>
+                <li><a id="ja-tem-uma-conta" href="#conta">Já tem uma conta?</a></li> </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" aria-labelledby="home-title">
+            <aside>
+                <h2 id="home-title">Aqui ajudamos você a <span>escolher o seu lugar</span></h2>
+                <p>Explore nosso marketplace...</p>
+                <form>
+                    <input type="text" id="nome" placeholder="Nome" required aria-label="Nome">
+                    <input type="email" id="email" placeholder="Email" required aria-label="Email">
+                    <button id="submit" type="submit">Enviar</button>
+                </form>
+            </aside>
+
+            <article>
+                <div id="carousel-container">
+                    <div id="carousel">
+                        <img src="download (1).jpeg" alt="Descrição da imagem 1">
+                        <img src="download (2).jpeg" alt="Descrição da imagem 2">
+                        <img src="download (3).jpeg" alt="Descrição da imagem 3">
+                        <img src="download.jpeg" alt="Descrição da imagem 4">
+                    </div>
+                    <div id="map" style="display: none; height: 400px; width: 100%;"></div>
+                </div>
+
+                 <div>
+                    <input type="text" id="nome-favorito" placeholder="Digite o bairro ou local para favoritar">
+                    <button id="adicionar-favorito">Adicionar aos Favoritos</button>
+                    <button id="mostrar-mapa-favoritos">Ver Mapa/Favoritos</button> <button id="mostrar-favoritos-lista">Ver Lista de Favoritos</button>
+                    <div id="favoritos-lista-container" style="display: none;">
+                        <h3>Favoritos Salvos:</h3>
+                        <ul id="lista-favoritos"></ul>
+                    </div>
+                 </div>
+            </article>
+        </section>
+
+        <section id="sobre" aria-labelledby="sobre-title">
+            <h2 id="sobre-title">Sobre nós</h2>
+            <p>Nós somos um marketplace que conecta compradores...</p>
+        </section>
+
+        </main>
+
+    <footer id="contato">
+        <div>
+            <h3>Sobre nós</h3>
+            <p>Nós somos um marketplace que conecta compradores...</p>
+        </div>
+        <div>
+            <h3>Links rápidos</h3>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Políticas de privacidade</a></li>
+                <li><a href="#">Ajuda</a></li>
+                <li><a href="#">Termos e condições</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Sobre Imóveis</h3>
+            <ul>
+                <li><a href="#">Casas</a></li>
+                <li><a href="#">Apartamentos</a></li>
+                <li><a href="#">Bairros</a></li>
+                <li><a href="#">Cidade</a></li>
+            </ul>
+        </div>
+        <div id="contato-info">
+            <h3>Contate-nos</h3>
+             <address>
+                Av. Roberto Silveira 437<br>
+                Maricá, RJ, 24900-000<br>
+                Telefone: <a href="tel:+552126371521">(21) 2637-1521</a><br>
+                Email: <a href="mailto:domuslaguna@gmail.com">domuslaguna@gmail.com</a>
+            </address>
+        </div>
+    </footer>
+
+    <div id="copyright">
+        <p>&copy; 2024 Domus Laguna. Todos os direitos reservados.</p>
+    </div>
+</body>
+</html>
