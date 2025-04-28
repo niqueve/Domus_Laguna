@@ -11,6 +11,7 @@
 - Yuri Castro Coelho - matricula: RA: 202413892
 - Monique Evellin Rodrigues Gomes - RA: 202514946
 - Douglas de Carvalho Galhardo - RA: 202514870
+- Caio Magalhães Marins - 202210806
 
   
 
