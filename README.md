@@ -6,11 +6,11 @@
 - Criação de aba de favoritos, salvando os dados no LocalStorge implementando a mudança visualmente.
 
 ## Integrantes atualmente no grupo
-- Caio Sandor Sambor Oliveira - matricula: 202413773
-- João Marcelo Brecha Rodrigues - matricula: 202222224
-- Yuri Castro Coelho - matricula: 202413892
-- Monique Evellin Rodrigues Gomes - matricula: 202514946
-- Douglas Galhardo
+- Caio Sandor Sambor Oliveira - RA: 202413773
+- João Marcelo Brecha Rodrigues - RA: 202222224
+- Yuri Castro Coelho - matricula: RA: 202413892
+- Monique Evellin Rodrigues Gomes - RA: 202514946
+- Douglas de Carvalho Galhardo - RA: 202514870
 
   
 
