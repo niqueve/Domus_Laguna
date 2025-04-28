@@ -1,2 +1,28 @@
-# Domus_Laguna
-Repositório projeto de Práticas Extensionistas
+# Domus Laguna
+
+
+## Modificações implementadas em 2025.1
+- API google maps para exibir e dar informações da cidade de atuação;
+- Criação de aba de favoritos, salvando os dados no LocalStorge implementando a mudança visualmente.
+
+## Integrantes atualmente no grupo
+- Caio Sandor Sambor Oliveira - matricula: 202413773
+- João Marcelo Brecha Rodrigues - matricula: 202222224
+- Yuri Castro Coelho - matricula: 202413892
+- Monique Evellin Rodrigues Gomes - matricula: 202514946
+- Douglas Galhardo
+
+  
+
+### Grupo e modificações geradas durante o período anterior
+- Carrossel
+- Menu Hamburger
+- Tooltip
+- Ser responsivo em pelo menos três dimensões. Menu hamburguer precisa aparecer no mobile.
+
+### integrantes do grupo
+- Caio Sandor Sambor Oliveira - matricula: 202413773
+- Arthur Oliveira pires Marinho Correia - matricula: 202413772
+- João Marcelo Brecha Rodrigues - matricula: 202222224
+- Yuri Castro Coelho - matricula: 202413892
+- matheus beiruth 
