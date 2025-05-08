@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Domus Laguna</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar-left">
+        <img src="imgs/Logo.png" alt="Logo" class="logo" /> 
+        <span class="site-name">Domus Laguna</span>
+      </div>
+    
+      <nav class="navbar-right">
+        <div class="nav-links">
+          <a href="#">Alugar</a>
+          <a href="#">Comprar</a>
+          <a href="#">Anunciar</a>
+          <a href="#">Preço</a>
+          <a href="#">Links úteis</a>
+          <a href="#">Ajuda</a>
+        </div>
+        <button class="login-button">Entrar</button>
+    
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+      </nav>
+    
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="#">Alugar</a>
+        <a href="#">Comprar</a>
+        <a href="#">Anunciar</a>
+        <a href="#">Preço</a>
+        <a href="#">Links úteis</a>
+        <a href="#">Ajuda</a>
+        <div class="login-button">Entrar</div>
+      </div>
+    </header>
+    
+    
+
+    <section class="hero">
+      <img class="hero-img" src="imgs/Cidade_de_Maricá.jpeg" alt="Imagem da cidade" /> <!--alterei para imagem em hd 05/08/25-->
+      <div class="hero-text">
+        <h2>Aqui ajudamos você a encontrar o seu lugar!</h2>
+        <input class="search-bar" type="text" placeholder="Buscar imóveis por localização, tipo..." />
+      </div>
+    </section>
+    <section class="search-window">
+      <div class="search-container">
+        <h2>Encontre um lar para<br />chamar de seu</h2>
+      
+        <div class="tab-buttons">
+          <button class="tab-btn active" data-tab="alugar">Alugar</button>
+          <button class="tab-btn" data-tab="comprar">Comprar</button>
+        </div>
+      
+        
+        <form id="form-alugar" class="search-form">
+          <div class="input-box">
+            <span class="icon">📍</span>
+            <input type="text" placeholder="Busque por cidade" />
+          </div>
+      
+          <div class="input-box">
+            <span class="icon">🏠</span>
+            <input type="text" placeholder="Busque por bairro" />
+          </div>
+      
+          <div class="row">
+            <div class="input-box">
+              <span class="icon">💰</span>
+              <select>
+                <option>Valor total até:</option>
+                <option>R$ 1.000</option>
+                <option>R$ 2.000</option>
+                <option>R$ 5.000</option>
+                <option>R$ 7.000</option>
+                <option>R$ 10.000</option>
+              </select>
+            </div>
+      
+            <div class="input-box">
+              <span class="icon">🛏️</span>
+              <select>
+                <option>Nº de quartos</option>
+                <option>1 quarto</option>
+                <option>2 quartos</option>
+                <option>3 quartos +</option>
+              </select>
+            </div>
+          </div>
+      
+          <button type="submit" class="search-button">Buscar imóveis</button>
+        </form>
+      
+        
+        <form id="form-comprar" class="search-form hidden">
+          <div class="input-box">
+            <span class="icon">📍</span>
+            <input type="text" placeholder="Busque por cidade" />
+          </div>
+      
+          <div class="input-box">
+            <span class="icon">🏠</span>
+            <input type="text" placeholder="Busque por bairro" />
+          </div>
+      
+          <div class="row">
+            <div class="input-box">
+              <span class="icon">💰</span>
+              <select>
+                <option>Imovel até:</option>
+                <option>R$ 100.000</option>
+                <option>R$ 300.000</option>
+                <option>R$ 500.000</option>
+                <option>R$ 700.000</option>
+                <option>R$ 1.000.000</option>
+              </select>
+            </div>
+      
+            <div class="input-box">
+              <span class="icon">🛏️</span>
+              <select>
+                <option>Nº de quartos</option>
+                <option>1 quarto</option>
+                <option>2 quartos</option>
+                <option>3 quartos</option>
+                <option>4 quartos +</option>
+              </select>
+            </div>
+          </div>
+      
+          <button type="submit" class="search-button">Buscar imóveis</button>
+        </form>
+      </div>
+      
+    </section>
+    
+    <section class="cards-section">
+      <div class="property-card">Imóvel 1</div>
+      <div class="property-card">Imóvel 2</div>
+      <div class="property-card">Imóvel 3</div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 Domus Laguna - Todos os direitos reservados</p>
+    </footer>
+  </body>
+  <script src="main.js"></script>
+</html>
