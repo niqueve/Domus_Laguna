@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="assets/CSS/login.css" />
+  <script defer src="assets/js/login.js"></script>
+</head>
+<body class="login-page">
+
+  <header class="navbar">
+    <div class="navbar-left">
+      <img src="assets/images/home/Logo.png" alt="Logo" class="logo" />
+      <span class="site-name"><a href="home.html">Domus Laguna</a></span>
+    </div>
+
+    <nav class="navbar-right">
+      <div class="nav-links">
+        <a href="#">Alugar</a>
+        <a href="#">Comprar</a>
+        <a href="#">Anunciar</a>
+        <a href="#">Preço</a>
+        <a href="#">Links úteis</a>
+        <a href="#">Ajuda</a>
+      </div>
+
+      <!-- Botão de login (desktop) -->
+      <a href="login.html" class="login-button">Entrar</a>
+
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#">Alugar</a>
+      <a href="#">Comprar</a>
+      <a href="#">Anunciar</a>
+      <a href="#">Preço</a>
+      <a href="#">Links úteis</a>
+      <a href="#">Ajuda</a>
+
+      <a href="login.html" class="login-button">Entrar</a>
+    </div>
+  </header>
+
+  <main class="login-main">
+    <div class="login-container">
+      <h2>Faça Seu login </h2>
+      <form>
+        <label for="email">Insira e-mail ou número de celular</label>
+        <input type="text" id="email" name="email" required />
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" required />
+
+        <button type="submit">Continuar</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Domus Laguna - Todos os direitos reservados</p>
+  </footer>
+
+  
+
+</body>
+</html>

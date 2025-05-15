@@ -254,19 +254,29 @@ body {
 }
 
 .login-button {
-  background-color: #f1f1f1;
-  padding: 8px 16px;
+ 
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid #284e5c;
   border-radius: 20px;
   font-weight: bold;
-  margin-left: 10px;
-  cursor: pointer;
+  color: #284e5c;
+  background-color: #f1f1f1;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
 }
+.login-button:hover{
+  background-color: #71b3b6bb;
+}
+
 
 .menu-toggle {
   display: none;
   font-size: 24px;
   margin-left: 16px;
   cursor: pointer;
+  color: #000;
 }
 
 .search-container {
@@ -382,18 +392,23 @@ body {
   }
 
   .mobile-menu .login-button {
-    margin-top: 10px;
-    background-color: #f1f1f1;
-    padding: 8px 16px;
-    border-radius: 25px;
-    font-weight: bold;
-    text-align: center;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid #284e5c;
+  border-radius: 20px;
+  font-weight: bold;
+  color: #284e5c;
+  background-color: #f1f1f1;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
   }
 
   .mobile-menu.active {
     display: flex;
   }
-}
+
 
 
 @media (min-width: 769px) {

@@ -1,0 +1,78 @@
+
+{
+    "Espraiado": [
+      {
+        "id": 1,
+        "tipo": "Apartamento",
+        "bairro": "Espraiado",
+        "endereco": "Av. Roberto Silveira 100, Maricá, RJ",
+        "descricao": "Apartamento aconchegante com 2 quartos e uma vista maravilhosa.",
+        "preco": 250000,
+        "imagem": "https://th.bing.com/th/id/R.27ec63cb5559e172a2b5551a115a4807?rik=1HyawptTuxEkhg&riu=http%3a%2f%2fwww.decorfacil.com%2fwp-content%2fuploads%2f2016%2f03%2fimagem46-8.jpg&ehk=jFnxYJzX2yIOvPJtcr3CMpanr8WR%2bIoL9kgNcTQ3KGk%3d&risl=1&pid=ImgRaw&r=0.jpg",
+        "contato": "(21) 9999-0000"
+      },
+      {
+        "id": 2,
+        "tipo": "Casa",
+        "bairro": "Espraiado",
+        "endereco": "Rua dos Girassóis 45, Maricá, RJ",
+        "descricao": "Casa espaçosa com 4 quartos, jardim e piscina.",
+        "preco": 850000,
+        "imagem": "https://th.bing.com/th/id/R.61e705efc28f2b57f80770aee908f704?rik=B4wvU0jcTrBwhw&pid=ImgRaw&r=0.jpg",
+        "contato": "(21) 9888-1111"
+      },
+      {
+        "id": 3,
+        "tipo": "Kitnet",
+        "bairro": "Espraiado",
+        "endereco": "Praça Central, Maricá, RJ",
+        "descricao": "Kitnet ideal para estudantes, localizada no centro da cidade.",
+        "preco": 120000,
+        "imagem": "https://jeffersondealmeida.com.br/wp-content/uploads/2023/06/villa-com-piscina-de-luxo-espetacular-design-contemporaneo-arte-digital-imoveis-casa-casa-e-propriedade-ge.jpg.jpg",
+        "contato": "(21) 9777-2222"
+      },
+      {
+        "id": 4,
+        "tipo": "Casa",
+        "bairro": "Espraiado",
+        "endereco": "Rua dos Girassóis 45, Maricá, RJ",
+        "descricao": "Casa espaçosa com 4 quartos, jardim e piscina.",
+        "preco": 850000,
+        "imagem": "https://th.bing.com/th/id/OIP.l3WvHierPgV6WWLGyzkHXQHaJQ?rs=1&pid=ImgDetMain.jpg",
+        "contato": "(21) 9888-1111"
+      }
+    ],
+
+    "Centro": [
+      {
+        "id": 1,
+        "tipo": "Apartamento",
+        "bairro": "Centro",
+        "endereco": "Av. Roberto Silveira 100, Maricá, RJ",
+        "descricao": "Apartamento aconchegante com 2 quartos e uma vista maravilhosa.",
+        "preco": 250000,
+        "imagem": "https://th.bing.com/th/id/OIP.l3WvHierPgV6WWLGyzkHXQHaJQ?rs=1&pid=ImgDetMain.jpg",
+        "contato": "(21) 9999-0000"
+      },
+      {
+        "id": 2,
+        "tipo": "Casa",
+        "bairro": "Centro",
+        "endereco": "Rua dos Girassóis 45, Maricá, RJ",
+        "descricao": "Casa espaçosa com 4 quartos, jardim e piscina.",
+        "preco": 850000,
+        "imagem": "https://jeffersondealmeida.com.br/wp-content/uploads/2023/06/villa-com-piscina-de-luxo-espetacular-design-contemporaneo-arte-digital-imoveis-casa-casa-e-propriedade-ge.jpg.jpg",
+        "contato": "(21) 9888-1111"
+      },
+      {
+        "id": 3,
+        "tipo": "Kitnet",
+        "bairro": "Centro",
+        "endereco": "Praça Central, Maricá, RJ",
+        "descricao": "Kitnet ideal para estudantes, localizada no centro da cidade.",
+        "preco": 120000,
+        "imagem": "https://th.bing.com/th/id/OIP.l3WvHierPgV6WWLGyzkHXQHaJQ?rs=1&pid=ImgDetMain.jpg",
+        "contato": "(21) 9777-2222"
+      }
+    ]
+  }
