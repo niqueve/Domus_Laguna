@@ -6,7 +6,9 @@
     <title>Domus Laguna</title>
     <link rel="stylesheet" href="assets/CSS/home/style.css" />
     <script defer src="assets/js/home/main.js"></script>
-    <script defer src="assets/js/home/search.js"></script>
+    <script async defer src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBlUeJOvuMtpbQBN6nZFhTd0q2G3hUWbD4&callback=initMap&loading=async"></script>
+    <script defer src="assets/js/home/map.js"></script>
+    
   </head>
   <body>
     <header class="navbar">
@@ -22,6 +24,7 @@
           <a href="#">Anunciar</a>
           <a href="#">Preço</a>
           <a href="#">Links úteis</a>
+          <a href="favoritos.html">Favoritos</a>
           <a href="#">Ajuda</a>
         </div>
         <button class="login-button" onclick="window.location.href='login.html'">Entrar</button>
@@ -35,6 +38,7 @@
         <a href="#">Anunciar</a>
         <a href="#">Preço</a>
         <a href="#">Links úteis</a>
+        <a href="favoritos.html">Favoritos</a>
         <a href="#">Ajuda</a>
         <div class="login-button">Entrar</div>
       </div>
@@ -137,7 +141,7 @@
           <button type="submit" class="search-button">Buscar imóveis</button>
         </form>
       </div>
-      <div id="searchConteiner"></div>
+      <div id="map"></div>
       
     </section>
     

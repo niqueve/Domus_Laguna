@@ -1,8 +1,30 @@
 let favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
 const searchConteiner = document.getElementById('searchConteiner');
 
+//-------------------------------------------------------caso não haja favoritos selecionados
+if (favoritos.lenhth === 0){
+    for (let i = 0; i < 4; i++) {
+        if(i===0){
+            searchConteiner.innerHTML +=
+             `
+            <div>
+                <img scr='assets/images/download.jpeg'/>
+            </div>
+            `
+        }else{
+            searchConteiner.innerHTML +=
+             `
+            <div>
+                <img scr='assets/images/download(${i}).jpeg'/>
+            </div>
+            `
+        }
+    }
+}
+
+//------------------------------------------------------com favoritos selecionados
 function fetchImoveisJson (){
-    fetch('imoveis.json')
+    fetch('assets/json/imoveis.json')
         .then(response =>{
             if (!response.ok) {
                 throw new Error('Erro ao buscar os dados do JSON.');

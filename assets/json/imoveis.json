@@ -5,6 +5,7 @@
         "id": 1,
         "tipo": "Apartamento",
         "bairro": "Espraiado",
+        "geolocalizacao": [-22.95, -42.90],
         "endereco": "Av. Roberto Silveira 100, Maricá, RJ",
         "descricao": "Apartamento aconchegante com 2 quartos e uma vista maravilhosa.",
         "preco": 250000,
@@ -15,6 +16,7 @@
         "id": 2,
         "tipo": "Casa",
         "bairro": "Espraiado",
+        "geolocalizacao": [-22.95, -42.90],
         "endereco": "Rua dos Girassóis 45, Maricá, RJ",
         "descricao": "Casa espaçosa com 4 quartos, jardim e piscina.",
         "preco": 850000,
@@ -25,6 +27,7 @@
         "id": 3,
         "tipo": "Kitnet",
         "bairro": "Espraiado",
+        "geolocalizacao": [-22.95, -42.90],
         "endereco": "Praça Central, Maricá, RJ",
         "descricao": "Kitnet ideal para estudantes, localizada no centro da cidade.",
         "preco": 120000,
@@ -35,6 +38,7 @@
         "id": 4,
         "tipo": "Casa",
         "bairro": "Espraiado",
+        "geolocalizacao": [-22.95, -42.90],
         "endereco": "Rua dos Girassóis 45, Maricá, RJ",
         "descricao": "Casa espaçosa com 4 quartos, jardim e piscina.",
         "preco": 850000,
@@ -48,6 +52,7 @@
         "id": 1,
         "tipo": "Apartamento",
         "bairro": "Centro",
+        "geolocalizacao": [-22.93, -42.82],
         "endereco": "Av. Roberto Silveira 100, Maricá, RJ",
         "descricao": "Apartamento aconchegante com 2 quartos e uma vista maravilhosa.",
         "preco": 250000,
@@ -58,6 +63,7 @@
         "id": 2,
         "tipo": "Casa",
         "bairro": "Centro",
+        "geolocalizacao": [-22.93, -42.82],
         "endereco": "Rua dos Girassóis 45, Maricá, RJ",
         "descricao": "Casa espaçosa com 4 quartos, jardim e piscina.",
         "preco": 850000,
@@ -68,11 +74,48 @@
         "id": 3,
         "tipo": "Kitnet",
         "bairro": "Centro",
+        "geolocalizacao": [-22.93, -42.82],
         "endereco": "Praça Central, Maricá, RJ",
         "descricao": "Kitnet ideal para estudantes, localizada no centro da cidade.",
         "preco": 120000,
         "imagem": "https://th.bing.com/th/id/OIP.l3WvHierPgV6WWLGyzkHXQHaJQ?rs=1&pid=ImgDetMain.jpg",
         "contato": "(21) 9777-2222"
       }
+    ],
+    "Ubatiba": [
+      {
+        "id": 3,
+        "tipo": "Kitnet",
+        "bairro": "Centro",
+        "geolocalizacao": [-22.87, -42.78],
+        "endereco": "Praça Central, Maricá, RJ",
+        "descricao": "Kitnet ideal para estudantes, localizada no centro da cidade.",
+        "preco": 120000,
+        "imagem": "https://th.bing.com/th/id/OIP.l3WvHierPgV6WWLGyzkHXQHaJQ?rs=1&pid=ImgDetMain.jpg",
+        "contato": "(21) 9777-2222"
+      },
+      {
+        "id": 3,
+        "tipo": "Kitnet",
+        "bairro": "Centro",
+        "geolocalizacao": [-22.87, -42.78],
+        "endereco": "Praça Central, Maricá, RJ",
+        "descricao": "Kitnet ideal para estudantes, localizada no centro da cidade.",
+        "preco": 120000,
+        "imagem": "https://jeffersondealmeida.com.br/wp-content/uploads/2023/06/villa-com-piscina-de-luxo-espetacular-design-contemporaneo-arte-digital-imoveis-casa-casa-e-propriedade-ge.jpg.jpg",
+        "contato": "(21) 9777-2222"
+      },
+      {
+       "id": 3,
+       "tipo": "Kitnet",
+       "bairro": "Centro",
+       "geolocalizacao": [-22.87, -42.78],
+       "endereco": "Praça Central, Maricá, RJ",
+       "descricao": "Kitnet ideal para estudantes, localizada no centro da cidade.",
+       "preco": 120000,
+       "imagem": "https://th.bing.com/th/id/OIP.l3WvHierPgV6WWLGyzkHXQHaJQ?rs=1&pid=ImgDetMain.jpg",
+       "contato": "(21) 9777-2222"
+      }
+
     ]
   }
