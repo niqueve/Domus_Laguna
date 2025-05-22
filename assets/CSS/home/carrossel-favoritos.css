@@ -11,5 +11,6 @@
 
 #carrossel img {
     width: calc(60% / 3); /* Exibir 3 imagens por vez */
+    height: 40vh;
     flex-shrink: 0;
 }
