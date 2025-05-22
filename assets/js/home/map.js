@@ -10,6 +10,7 @@ async function initMap() {
     loadFavoritos();
 
     addMarker({ lat: -22.95, lng: -42.90 }, "Espraiado", false);
+    addMarker({ lat: -22.87, lng: -42.78 }, "Ubatiba", false);
     addMarker({ lat: -22.93, lng: -42.82 }, "Centro", false);
 }
 
