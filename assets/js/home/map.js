@@ -7,15 +7,10 @@ async function initMap() {
         zoom: 12,
     });
     
-    addAvailablePlaces();
     loadFavoritos();
 
-    /*addMarker({ lat: -22.95, lng: -42.90 }, "Espraiado", false);
-    addMarker({ lat: -22.93, lng: -42.82 }, "Centro", false);*/
-
-    
-    //map.controls[google.maps.ControlPosition.TOP_CENTER].push(buttonDiv);
-
+    addMarker({ lat: -22.95, lng: -42.90 }, "Espraiado", false);
+    addMarker({ lat: -22.93, lng: -42.82 }, "Centro", false);
 }
 
 function addMarker(location, title, isFavorite = false) {
@@ -67,22 +62,7 @@ function loadFavoritos() {
             const marker = addMarker({ lat: data.lat, lng: data.lng }, data.title, true);
             markersFavoritos.push(marker);
         });
-    }
-    carregarBairrosFiltrados();
+    };
 }
-function addAvailablePlaces(){
-    fetch('assets/json/imoveis.json')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Erro ao buscar os dados do JSON.');
-            }
-            return response.json();
-        })
-        .then(data=>{
-            data.forEach(marker=>{
-                const lat = marker[0];
-                const long = marker[1];
 
-            })
-        })
-}
+

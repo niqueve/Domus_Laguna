@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (data[bairro]) {
                     const bairroDiv = document.createElement('div');
                     bairroDiv.className = 'bairro';
-                    bairroDiv.innerHTML = `<div class = "bairro-name"><h2>${bairro}</h2></div>`;
+                    bairroDiv.innerHTML = `<div class:"bairro-name"><h2>${bairro}</h2></div>`;
 
                     // Adiciona os imóveis relacionados ao bairro
                     data[bairro].forEach(imovel => {
@@ -29,13 +29,14 @@ document.addEventListener("DOMContentLoaded", function () {
                         imovelDiv.className = 'imovel';
 
                         imovelDiv.innerHTML = `
-                            <div class="imovel-image">
-                                <img src="${imovel.imagem}" alt="${imovel.tipo}" style="width: 100%; max-width: 300px;">
+                            
+                            <div><img src="${imovel.imagem}" alt="${imovel.tipo}" style="width: 100%; max-width: 300px;"></div>
+                            <div class: imovel-description>
+                            <h2>${imovel.tipo} - R$${imovel.preco.toLocaleString()}</h3></br>
+                            <h3>Descrição: </h3>
+                            <p>${imovel.descricao}</p>
                             </div>
-                            <div class="imovel-description">
-                                <h3>${imovel.tipo} - R$${imovel.preco.toLocaleString()}</h3>
-                                <p>${imovel.descricao}</p>
-                            </div>
+                            
                         `;
 
                         bairroDiv.appendChild(imovelDiv);

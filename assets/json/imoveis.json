@@ -49,7 +49,7 @@
 
     "Centro": [
       {
-        "id": 1,
+        "id": 5,
         "tipo": "Apartamento",
         "bairro": "Centro",
         "geolocalizacao": [-22.93, -42.82],
@@ -60,7 +60,7 @@
         "contato": "(21) 9999-0000"
       },
       {
-        "id": 2,
+        "id": 6,
         "tipo": "Casa",
         "bairro": "Centro",
         "geolocalizacao": [-22.93, -42.82],
@@ -71,7 +71,7 @@
         "contato": "(21) 9888-1111"
       },
       {
-        "id": 3,
+        "id": 7,
         "tipo": "Kitnet",
         "bairro": "Centro",
         "geolocalizacao": [-22.93, -42.82],
@@ -84,7 +84,7 @@
     ],
     "Ubatiba": [
       {
-        "id": 3,
+        "id": 8,
         "tipo": "Kitnet",
         "bairro": "Centro",
         "geolocalizacao": [-22.87, -42.78],
@@ -95,7 +95,7 @@
         "contato": "(21) 9777-2222"
       },
       {
-        "id": 3,
+        "id": 9,
         "tipo": "Kitnet",
         "bairro": "Centro",
         "geolocalizacao": [-22.87, -42.78],
@@ -106,7 +106,7 @@
         "contato": "(21) 9777-2222"
       },
       {
-       "id": 3,
+       "id": 10,
        "tipo": "Kitnet",
        "bairro": "Centro",
        "geolocalizacao": [-22.87, -42.78],
