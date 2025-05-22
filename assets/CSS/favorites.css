@@ -1,0 +1,70 @@
+#favorite-conteiner{
+    display: flex;
+    width: 100%;
+}
+.bairro{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.3rem;
+    font-weight: 700;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-left: 5rem;
+    border: 0.2rem solid;
+    color:#000000;
+    background-color: #8cd0c9;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+.bairro-name{
+    width: 30rem;
+    height: 50vh;
+    background-color: #629e9a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imovel{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    margin: 2rem 2rem;
+    padding: 1rem;
+    border: 10px;
+    border-color: #000000;
+
+}
+
+.imovel-description{
+    font-size: 1.2rem;
+    padding: 2rem;
+}
+
+.bairro {
+    display: flex;
+    justify-content: flex-start; /* Mantém alinhado à esquerda */
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 10px; /* Espaço entre os imóveis */
+    scroll-snap-type: x mandatory; /* Faz os imóveis "encaixarem" na rolagem */
+    padding: 10px;
+    max-width: 70vw; /* Ajuste conforme necessário */
+}
+
+.imovel {
+    flex: none;
+    width: 100%; 
+    min-width: 300px; /* Defina um tamanho mínimo */
+    scroll-snap-align: start; /* Alinha os itens ao rolar */
+    border: 2px solid #000;
+}
+

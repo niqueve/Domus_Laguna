@@ -126,10 +126,12 @@ body {
 .search-window {
   background: white;
   padding: 40px 30px;
-  max-width: 500px;
+  max-width: 90%;
   margin: 40px 0 40px 40px;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 20%;
 }
 
 
@@ -423,3 +425,9 @@ body {
     align-items: center;
   }
 }
+ /*teste mapa*/
+#map{
+    height: 500px;
+    width: 100%;
+}
+

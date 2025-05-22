@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Domus Laguna</title>
     <link rel="stylesheet" href="assets/CSS/home/style.css" />
+    <link rel="stylesheet" href="assets/CSS/home/carrossel-favoritos.css"/>
     <script defer src="assets/js/home/main.js"></script>
+    <script defer src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBlUeJOvuMtpbQBN6nZFhTd0q2G3hUWbD4&callback=initMap&loading=async"></script>
+    <script defer src="assets/js/home/map.js"></script>
     <script defer src="assets/js/home/search.js"></script>
+   
+    
   </head>
   <body>
     <header class="navbar">
@@ -22,6 +27,7 @@
           <a href="#">Anunciar</a>
           <a href="#">Preço</a>
           <a href="#">Links úteis</a>
+          <a href="favoritos.html">Favoritos</a>
           <a href="#">Ajuda</a>
         </div>
         <button class="login-button" onclick="window.location.href='login.html'">Entrar</button>
@@ -35,6 +41,7 @@
         <a href="#">Anunciar</a>
         <a href="#">Preço</a>
         <a href="#">Links úteis</a>
+        <a href="favoritos.html">Favoritos</a>
         <a href="#">Ajuda</a>
         <div class="login-button">Entrar</div>
       </div>
@@ -137,14 +144,19 @@
           <button type="submit" class="search-button">Buscar imóveis</button>
         </form>
       </div>
-      <div id="searchConteiner"></div>
+      <div id="map"></div>
       
     </section>
     
     <section class="cards-section">
-      <div class="property-card">Imóvel 1</div>
-      <div class="property-card">Imóvel 2</div>
-      <div class="property-card">Imóvel 3</div>
+      <div id="carrossel-container">
+                    <div id="carrossel">
+                      <img src="assets/images/download (1).jpeg" alt="Descrição da imagem 1">
+                      <img src="assets/images/download (2).jpeg" alt="Descrição da imagem 2">
+                      <img src="assets/images/download.jpeg" alt="Descrição da imagem 3">
+                    </div>
+                </div>
+
     </section>
 
     <footer class="footer">
