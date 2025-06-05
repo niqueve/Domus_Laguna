@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="assets/css/cadastro.css" />
+  <script defer src="assets/js/cadastro.js"></script>
+</head>
+<body class="cadastro-page">
+
+  <header class="navbar">
+    <div class="navbar-left">
+      <img src="assets/images/home/Logo.png" alt="Logo" class="logo" />
+      <span class="site-name"><a href="home.html">Domus Laguna</a></span>
+    </div>
+
+    <nav class="navbar-right">
+      <div class="nav-links">
+        <a href="#">Alugar</a>
+        <a href="#">Comprar</a>
+        <a href="#">Anunciar</a>
+        <a href="#">Preço</a>
+        <a href="#">Links úteis</a>
+        <a href="#">Ajuda</a>
+      </div>
+      <a href="login.html" class="cadastro-button">Entrar</a>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#">Alugar</a>
+      <a href="#">Comprar</a>
+      <a href="#">Anunciar</a>
+      <a href="#">Preço</a>
+      <a href="#">Links úteis</a>
+      <a href="#">Ajuda</a>
+      <a href="cadastro.html" class="cadastro-button">Entrar</a>
+    </div>
+  </header>
+
+  <main class="cadastro-main">
+    <div class="cadastro-container">
+      <div class="form-toggle">
+        <button id="btn-comprador" class="active">Cadastro Comprador</button>
+        <button id="btn-vendedor">Cadastro Vendedor</button>
+      </div>
+
+      <form id="form-comprador" class="form-section active">
+        <h2>Comprador</h2>
+        <input type="text" placeholder="Nome">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Senha">
+        <button type="submit">Cadastrar</button>
+      </form>
+
+      <form id="form-vendedor" class="form-section">
+        <h2>Vendedor</h2>
+        <input type="text" placeholder="Nome">
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="CPF/CNPJ">
+        <input type="password" placeholder="Senha">
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Domus Laguna - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>

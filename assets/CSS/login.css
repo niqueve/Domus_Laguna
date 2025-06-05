@@ -140,6 +140,18 @@ html, body {
   background-color: #1e3c47;
 }
 
+.esqueci-senha{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  
+}
+.esqueci-senha a{
+  text-decoration: none;
+  color:#333;
+}
+
+
 /* Footer */
 .footer {
   background-color: #284e5c;
