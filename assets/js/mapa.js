@@ -6,3 +6,5 @@ async function initMap() {
         zoom: 12,
     });
 }
+
+window.initMap = initMap;

@@ -69,3 +69,4 @@ function loadFavoritos() {
 window.initMap = initMap;
 
 
+window.initMap = initMap;
