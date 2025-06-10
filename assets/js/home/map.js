@@ -66,4 +66,6 @@ function loadFavoritos() {
     };
 }
 
+window.initMap = initMap;
+
 
